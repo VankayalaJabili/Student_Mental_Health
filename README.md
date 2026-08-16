@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧠 Predictive and Proactive Student Mental Health Monitoring
 
-## Getting Started
+## 📌 Overview
 
-First, run the development server:
+An AI-based web application that monitors student behavioral patterns and predicts mental health risk levels using machine learning and Explainable AI.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 🎯 Objectives
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Monitor student behavioral patterns.
+- Predict mental health risk.
+- Explain predictions using SHAP.
+- Provide personalized recommendations.
+- Track historical progress.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+# ✨ Features
 
-To learn more about Next.js, take a look at the following resources:
+## 📋 Daily Check-In
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Collects information about:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Sleep
+- Phone usage
+- Physical activity
+- Social interaction
+- Study/workload
+- Mood and stress
 
-## Deploy on Vercel
+## 🤖 Risk Prediction
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Predicts four risk categories:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Normal
+- Mild
+- Moderate
+- Severe
+
+## 🔍 Explainable AI
+
+Uses SHAP to identify the behavioral factors influencing predictions.
+
+## 💡 Recommendations
+
+Provides personalized wellness suggestions based on the predicted risk and behavioral factors.
+
+## 📊 Dashboard
+
+Displays:
+
+- Risk level
+- Progress
+- SHAP explanations
+- Recommendations
+
+---
+
+# 🏗️ System Architecture
+
+```text
+User
+  ↓
+Next.js Frontend
+  ↓
+Node.js / API
+  ↓
+SQLite Database
+  ↓
+Flask AI Service
+  ↓
+XGBoost / DNN
+  ↓
+Prediction + SHAP
+  ↓
+Recommendations
